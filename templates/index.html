@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cardano Trading Volume</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <body>
+    <h2>Cardano</h2>
+    <form method="POST">
+        <input type="date" name="date" placeholder="Enter a date"/><br>
+        <div class="volume"><input type="submit" value="Get Volume"></div>
+    </form>
+    <br><br>
+    {% if ADAVolume %}
+    <h3>Cardano's 24 Hour Trading Volume on <br>{{ date }} <br> <span>{{ ADAVolume }} M ADA</span></h3>
+    {% endif %}
+  </body>
+</html>
+

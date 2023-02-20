@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:wght@400;500&display=swap');
+body{
+    padding: 0;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+h2{
+    font-family:"Poppins";
+    
+}
+h3{
+    font-family:"Poppins";
+    font-size: 12px;
+}
+h3 span{
+    font-size: 20px;
+    color: red;
+}
+.volume input{
+    background-color: #252525;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    position: relative;
+    width:70px;
+    height:20px;
+    bottom: -20px;
+    font-size: 10px;
+    font-family:"Poppins";
+    transition: transform 2s;
+}
+.volume input:hover{
+    transform: scale(1.1);
+
+}
